@@ -5,6 +5,7 @@ import { BsArrowUpShort } from 'react-icons/bs'
 import { BsBorderStyle } from 'react-icons/bs'
 import { MdAccountBalance } from 'react-icons/md'
 import { FcSalesPerformance } from 'react-icons/fc'
+import { HiArrowSmDown } from 'react-icons/hi'
 const Card = () =>
 {
 
@@ -14,28 +15,39 @@ const Card = () =>
             heading: 'Earning',
             price: '$198k',
             percentage: '37.8%',
-            icon: <AiOutlineDollarCircle size={40} />
+            icon: <AiOutlineDollarCircle size={40} />,
+            arrow: < BsArrowUpShort size={25} color='green' />,
+            percentageColor: 'green'
         },
         {
             color: '#54b5ff',
             heading: 'Orders',
             price: '$2.4k',
             percentage: '2%',
-            icon: <BsBorderStyle size={40} />
+            icon: <BsBorderStyle size={40} />,
+            arrow: < HiArrowSmDown size={25} color='red' />,
+            percentageColor: 'red'
+
         },
         {
             color: '#d776f5',
             heading: 'Balance',
             price: '$2.4k',
             percentage: '2%',
-            icon: <MdAccountBalance size={40} />
+            icon: <MdAccountBalance size={40} />,
+            arrow: < HiArrowSmDown size={25} color='red' />,
+            percentageColor: 'red'
+
         },
         {
             color: '#fa32e6',
             heading: 'Total Sales',
             price: '$8.9k',
             percentage: '11%',
-            icon: <FcSalesPerformance size={40} />
+            icon: <FcSalesPerformance size={40} />,
+            arrow: < BsArrowUpShort size={25} color='green' />,
+            percentageColor: 'green'
+
         },
     ]
     return (
@@ -53,7 +65,12 @@ const Card = () =>
                     <div>
                         <p className='text-sm'>{card.heading}</p>
                         <h4 className='text-xl font-semibold'>{card.price}</h4>
-                        <p className='text-sm'> <span className='inline-flex'><BsArrowUpShort color='red' size={20} /></span ><span className='text-red-500'>{card.percentage}</span> this month</p>
+                        <div className='flex items-center'>
+
+                            <span className=''>{card.arrow}</span >
+                            <span className='text-red-500' style={{ color: card.percentageColor }}>{card.percentage}</span>
+                            <span>this month</span>
+                        </div>
                     </div>
                 </div>
             ))}

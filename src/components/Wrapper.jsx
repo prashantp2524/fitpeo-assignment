@@ -16,10 +16,10 @@ const Wrapper = () =>
 
             <div className='flex w-screen'>
 
-                <div className='w-[18%] '><Sidebar /></div>
+                <div className='w-[18%] sm:w-0 md:w-0'><Sidebar /></div>
 
-                <div className='w-[82%] px-10 py-4 md:w-screen  sm:w-full  ' >
-                    <div className='flex justify-between p-4 w-full md:px-8 sm:px-8' >
+                <div className='w-[82%] px-10 py-4 md:w-screen  sm:w-screen  ' >
+                    <div className='flex justify-between p-4 w-full md:px-4 sm:px-2' >
                         <div><h1 className='text-2xl font-semibold sm:text-xl'>Hello Shaharuk!</h1></div>
                         <div className='sm:w-[50%]'>
 
@@ -37,7 +37,7 @@ const Wrapper = () =>
                         </div>
                     </div>
 
-                    <div className='w-full   justify-center items-center'>
+                    <div className='w-full  sm:w-full justify-center items-center'>
                         <div><Card /></div>
                     </div>
 
