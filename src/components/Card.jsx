@@ -51,7 +51,7 @@ const Card = () =>
         },
     ]
     return (
-        <div className='flex justify-between sm:flex-wrap'>
+        <div className='flex justify-between sm:flex-wrap sm:w-full'>
 
             {cardData && cardData.map((card, indx) => (
 

@@ -68,23 +68,23 @@ const ProductSell = () =>
                                     <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
                                 </div>
                                 <div>
-                                    <h6 className='text-md font-semibold'>Abstract 3D</h6>
-                                    <p >Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h6 className='text-md font-semibold sm:text-xs'>Abstract 3D</h6>
+                                    <p className='sm:text-xs'>Lorem ipsum dolor sit amet consectetur.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className=''>
-                            <p >32 in Stock</p>
+                            <p className='sm:text-xs'>32 in Stock</p>
                         </div>
                         <div className=''>
 
-                            <p className='font-bold'>$45.99</p>
+                            <p className='font-bold sm:text-xs'>$45.99</p>
                         </div>
 
                         <div className=''>
 
-                            <p>20</p>
+                            <p className='sm:text-xs'>20</p>
                         </div>
 
 
@@ -98,23 +98,23 @@ const ProductSell = () =>
                                     <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
                                 </div>
                                 <div>
-                                    <h6 className='text-md font-semibold'>Abstract 3D</h6>
-                                    <p >Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h6 className='text-md font-semibold sm:text-xs'>Abstract 3D</h6>
+                                    <p className='sm:text-xs' >Lorem ipsum dolor sit amet consectetur.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className=''>
-                            <p >32 in Stock</p>
+                            <p className='sm:text-xs'>32 in Stock</p>
                         </div>
                         <div className=''>
 
-                            <p className='font-bold'>$45.99</p>
+                            <p className='font-bold sm:text-xs'>$45.99</p>
                         </div>
 
                         <div className=''>
 
-                            <p>20</p>
+                            <p className='sm:text-xs'>20</p>
                         </div>
                     </div>
 
