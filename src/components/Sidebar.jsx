@@ -6,6 +6,7 @@ import { TbBrandProducthunt } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
 
 import { IoIosArrowDown } from 'react-icons/io'
+import { RxCross2 } from 'react-icons/rx'
 
 const Sidebar = () =>
 {
@@ -16,23 +17,23 @@ const Sidebar = () =>
     const handleToggle = () =>
     {
         // ref.current.classList.remove('-translate-x-full')
-        setToggle(!toggle)
+        setToggle(true)
     }
 
     const hideSidebar = () =>
     {
-        // ref.current.classList.add('-translate-x-full')
+        setToggle(false)
     }
     return (
         <>
-            <div className='hidden md:block sm:block'>
+            <div className='hidden md:block sm:block p-2 absolute top-0 left-0'>
                 <button
                     type="button"
                     onClick={handleToggle}
 
                 >
                     <svg
-                        className="w-6 h-6"
+                        className="w-8 h-8"
 
                         fill="currentColor"
                         viewBox="0 0 20 20"
@@ -47,11 +48,17 @@ const Sidebar = () =>
                 </button>
             </div>
 
-            <div className={`w-[18vw] md:w-1/2 sm:w-full md:fixed sm:fixed bg-[#010445] h-[100vh] text-white fixed z-[100] transition-all duration-200 ease-linear ${toggle ? 'md:left-0' : 'md:-left-full'} ${toggle ? 'sm:left-0' : 'sm:-left-full'}`}>
-
+            <div className={` md:w-1/2 sm:w-full md:fixed sm:fixed bg-[#010445] h-[100vh] sticky text-white fixed z-[100] absolute top-0 bottom-0 my-0 transition-all duration-200 ease-linear ${toggle ? 'md:left-0' : 'md:-left-full'} ${toggle ? 'sm:left-0' : 'sm:-left-full'}`}>
+                <div onClick={hideSidebar} className='absolute right-0 p-1 sm:p-4 hidden sm:block md:block'>
+                    <RxCross2 size={30} color='white' />
+                </div>
                 <div className='flex justify-center pt-4  inline'>
+
                     <span className='px-2'><BiSolidDashboard size={35} /> </span>
                     <h2 className='text-2xl font-semibold'>Dashboard</h2>
+
+
+
                 </div>
                 <div className='flex justify-center mt-10 flex-col px-4'>
                     <div className='bg-[#340575] rounded w-full  my-2 p-1 text-center flex items-center '>
@@ -59,7 +66,7 @@ const Sidebar = () =>
 
                         <Link className='text-md text-center font-semibold  '> Dashboard</Link>
                     </div>
-                    <div className='  w-full  p-1 text-center flex my-4 items-center justify-between'>
+                    <div className=' hover:bg-[#340575] hover:rounded w-full  p-1 text-center flex my-4 items-center justify-between'>
                         <div className='flex'>
 
                             <span className='px-2'><TbBrandProducthunt size={25} /></span>
@@ -71,7 +78,7 @@ const Sidebar = () =>
                             <Link className='text-md  font-semibold  '> <FaAngleRight /></Link>
                         </div>
                     </div>
-                    <div className='  w-full  p-1 text-center flex my-4 items-center justify-between'>
+                    <div className=' hover:bg-[#340575] hover:rounded w-full  p-1 text-center flex my-4 items-center justify-between'>
                         <div className='flex'>
 
                             <span className='px-2'><TbDashboard size={25} /></span>
@@ -83,7 +90,7 @@ const Sidebar = () =>
                             <Link className='text-md  font-semibold  '> <FaAngleRight /></Link>
                         </div>
                     </div>
-                    <div className='  w-full  p-1 text-center flex my-4 items-center justify-between'>
+                    <div className=' hover:bg-[#340575] hover:rounded w-full  p-1 text-center flex my-4 items-center justify-between'>
                         <div className='flex'>
 
                             <span className='px-2'><TbDashboard size={25} /></span>
@@ -95,7 +102,7 @@ const Sidebar = () =>
                             <Link className='text-md  font-semibold  '> <FaAngleRight /></Link>
                         </div>
                     </div>
-                    <div className='  w-full  p-1 text-center flex my-4 items-center justify-between'>
+                    <div className=' hover:bg-[#340575] hover:rounded w-full  p-1 text-center flex my-4 items-center justify-between'>
                         <div className='flex'>
 
                             <span className='px-2'><TbDashboard size={25} /></span>
@@ -107,7 +114,7 @@ const Sidebar = () =>
                             <Link className='text-md  font-semibold  '> <FaAngleRight /></Link>
                         </div>
                     </div>
-                    <div className='  w-full  p-1 text-center flex my-4 items-center justify-between'>
+                    <div className='hover:bg-[#340575] hover:rounded  w-full  p-1 text-center flex my-4 items-center justify-between'>
                         <div className='flex'>
 
                             <span className='px-2'><TbDashboard size={25} /></span>

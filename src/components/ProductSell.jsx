@@ -38,79 +38,86 @@ const ProductSell = () =>
                     </div>
 
                     <div className='mt-4'>
-                        <div className='flex justify-between items-center'>
-                            <div>
+                        <div className='grid grid-cols-7'>
+                            <div className='grid col-start-1 col-end-5'>
                                 <p>Product Name</p>
                             </div>
-                            <div className='flex '>
-                                <div className='mx-6'>
-                                    <p >Stock</p>
-                                </div>
-                                <div className='mx-6'>
 
-                                    <p>Price</p>
-                                </div>
-
-                                <div className='mx-6'>
-
-                                    <p>Total Sales</p>
-                                </div>
+                            <div className=''>
+                                <p >Stock</p>
                             </div>
+                            <div className=''>
+
+                                <p>Price</p>
+                            </div>
+
+                            <div className=''>
+
+                                <p>Total Sales</p>
+                            </div>
+
                         </div>
                     </div>
                     <hr className='my-2' />
-                    <div className='flex justify-between mt-4'>
-                        <div className='flex items-center'>
-                            <div className='w-20 px-2'>
-                                <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
-                            </div>
-                            <div>
-                                <h6 className='text-md font-semibold'>Abstract 3D</h6>
-                                <p >Lorem ipsum dolor sit amet consectetur.</p>
+                    <div className=' mt-4 grid grid-cols-7'>
+                        <div className='grid col-start-1 col-end-5'>
+
+
+                            <div className='flex  sm:flex-col  '>
+                                <div className='w-20 px-2'>
+                                    <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
+                                </div>
+                                <div>
+                                    <h6 className='text-md font-semibold'>Abstract 3D</h6>
+                                    <p >Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className='flex items-center '>
-                            <div className='mx-6'>
-                                <p >32 in Stock</p>
-                            </div>
-                            <div className='mx-6'>
 
-                                <p className='font-bold'>$45.99</p>
-                            </div>
-
-                            <div className='mx-6'>
-
-                                <p>20</p>
-                            </div>
+                        <div className=''>
+                            <p >32 in Stock</p>
                         </div>
+                        <div className=''>
+
+                            <p className='font-bold'>$45.99</p>
+                        </div>
+
+                        <div className=''>
+
+                            <p>20</p>
+                        </div>
+
 
                     </div>
-                    <div className='flex justify-between mt-4'>
-                        <div className='flex items-center'>
-                            <div className='w-20 px-2'>
-                                <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
-                            </div>
-                            <div>
-                                <h6 className='text-md font-semibold'>Abstract 3D</h6>
-                                <p >Lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </div>
-                        <div className='flex '>
-                            <div className='mx-6'>
-                                <p >32 in Stock</p>
-                            </div>
-                            <div className='mx-6'>
+                    <div className=' mt-4 grid grid-cols-7'>
+                        <div className='grid col-start-1 col-end-5'>
 
-                                <p className='font-bold'>$45.99</p>
-                            </div>
 
-                            <div className='mx-6'>
-
-                                <p>20</p>
+                            <div className='flex  sm:flex-col '>
+                                <div className='w-20 px-2'>
+                                    <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
+                                </div>
+                                <div>
+                                    <h6 className='text-md font-semibold'>Abstract 3D</h6>
+                                    <p >Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
                             </div>
                         </div>
 
+                        <div className=''>
+                            <p >32 in Stock</p>
+                        </div>
+                        <div className=''>
+
+                            <p className='font-bold'>$45.99</p>
+                        </div>
+
+                        <div className=''>
+
+                            <p>20</p>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
