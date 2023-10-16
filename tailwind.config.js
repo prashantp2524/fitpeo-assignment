@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // content: ["./src/**/*.{html,js}"],
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx,html}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx,html}",
+    "./node_modules/flowbite/**/*.jsx",
+  ],
   theme: {
     extend: {},
     screens: {
@@ -11,8 +14,5 @@ module.exports = {
       lg: { min: "1024px", max: "1250px" },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light", "cupcake"],
-  },
+  plugins: [require("flowbite/plugin")],
 };
