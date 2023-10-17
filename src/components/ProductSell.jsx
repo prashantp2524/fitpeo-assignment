@@ -98,7 +98,7 @@ const ProductSell = () =>
                                     <img className='border rounded' src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=sph" alt="" />
                                 </div>
                                 <div>
-                                    <h6 className='text-md font-semibold sm:text-xs'>Abstract 3D</h6>
+                                    <h6 className='text-md font-semibold sm:text-xs'>Sarfanes illustration</h6>
                                     <p className='sm:text-xs' >Lorem ipsum dolor sit amet consectetur.</p>
                                 </div>
                             </div>

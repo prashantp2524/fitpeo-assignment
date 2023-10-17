@@ -19,8 +19,8 @@ const Wrapper = () =>
                 <div className='w-[18%] sm:w-0 md:w-0'><Sidebar /></div>
 
                 <div className='w-[82%] px-10 py-4 sm:px-2 md:px-4 md:w-screen  sm:w-screen  ' >
-                    <div className='flex justify-between p-4 w-full md:px-4 sm:px-2' >
-                        <div><h1 className='text-2xl font-semibold sm:text-xl'>Hello Shaharuk!</h1></div>
+                    <div className='flex justify-between p-4 w-full md:px-4 sm:px-2 sm:py-4' >
+                        <div><h1 className='text-2xl font-semibold sm:text-base'>Hello Shaharuk!</h1></div>
                         <div className='sm:w-[50%]'>
 
                             <form>
